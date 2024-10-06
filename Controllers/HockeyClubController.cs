@@ -20,7 +20,7 @@ public class HockeyClubController : ControllerBase
 
   public IActionResult GetLeaderData()
   {
-    return Ok("Leader: Leader has access to all system imformation except server code.")
+    return Ok("Leader: Leader has access to all system imformation except server code.");
   }
 
   // Office has access to accounting and administration documents.
@@ -29,7 +29,7 @@ public class HockeyClubController : ControllerBase
 
   public IActionResult GetOfficeData()
   {
-    return Ok("Office has access to accounting and administration documents.")
+    return Ok("Office has access to accounting and administration documents.");
   }
 
   // Trainer has access to trainer files and related documents
@@ -38,10 +38,16 @@ public class HockeyClubController : ControllerBase
 
   public IActionResult GetTrainerData()
   {
-    return Ok("Trainer has access to trainer files and related documents")
+    return Ok("Trainer has access to trainer files and related documents");
   }
 
   // Helper has access to helper specific documents
+  [Authorize(Roles = "Helper")]
+  [HttpGet("Helper")]
 
+  public IActionResult GetHelperData()
+  {
+    return Ok("Helper has access to helper specific documents");
+  }
 
 }

@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "WWrH0jOjUoEblw5c8dTJ2qpDGkA0gVxvnr8twyLDnrc=",
+  "Source": "HockeyClubAPI",
+  "BasePath": "_content/HockeyClubAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

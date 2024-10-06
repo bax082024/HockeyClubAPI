@@ -5,6 +5,7 @@ using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Threading.Tasks;
 using System.Xml.Schema;
+using HockeyClubAPI.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
