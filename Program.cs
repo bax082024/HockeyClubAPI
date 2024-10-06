@@ -34,6 +34,8 @@ if (!app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 
+app.UseRouting();
+
 app.UseAuthentication(); // Enable authentication
 app.UseAuthorization(); // Enable auhorization
 
