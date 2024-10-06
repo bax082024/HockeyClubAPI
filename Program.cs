@@ -13,6 +13,12 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddDbContext<HockeyClubContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
+builder.Services.AddIdentity<ApplicationUser, IdentityRole>()
+    .AddEntityFrameworkStores<HockeyClubContext>()
+    .AddDefaultTokenProviders();
+
+builder.Services.AddControllers();
+
 
 async Task CreateRoles(IServiceProvider serviceProvider)
 {
