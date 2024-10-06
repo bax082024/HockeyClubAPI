@@ -1,0 +1,10 @@
+@model HockeyClubAPI.Models.Player
+
+<h1>Add New Player</h1>
+
+<form asp-action="Create" method="post">
+    <div class="form-group">
+      <label asp-for="FullName" class="control-label"></label>
+      <input asp-for="FullName" class="form-control" />
+      <span asp-validation-for ="FullName" class="text-danger"></span>
+    </div>
