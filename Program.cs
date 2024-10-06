@@ -5,6 +5,9 @@ using System.Threading.Tasks;
 
 async Task CreateRoles(IServiceProvider serviceProvider)
 {
-    
+    var roleManager = serviceProvider.GetRequiredService<RoleManager<IdentityRole>>();
+
+    // Define Roles
+    string[] roleNames = 
 
 }
