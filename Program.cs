@@ -8,6 +8,7 @@ using System.Xml.Schema;
 using HockeyClubAPI.Models;
 using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
+using HockeyClubAPI.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 
