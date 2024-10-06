@@ -1,11 +1,39 @@
 {
   "Version": 1,
-  "Hash": "WWrH0jOjUoEblw5c8dTJ2qpDGkA0gVxvnr8twyLDnrc=",
+  "Hash": "cVbH0sH1j88fgtRFhB3cPK0R8bqXRpSVBDg6QFPwu2c=",
   "Source": "HockeyClubAPI",
   "BasePath": "_content/HockeyClubAPI",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
-  "Assets": []
+  "DiscoveryPatterns": [
+    {
+      "Name": "HockeyClubAPI\\wwwroot",
+      "Source": "HockeyClubAPI",
+      "ContentRoot": "C:\\HjemmeKode\\C-Sharp\\C-Sharp\\HockeyClubAPI\\wwwroot\\",
+      "BasePath": "_content/HockeyClubAPI",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\HjemmeKode\\C-Sharp\\C-Sharp\\HockeyClubAPI\\wwwroot\\example.html",
+      "SourceId": "HockeyClubAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\HjemmeKode\\C-Sharp\\C-Sharp\\HockeyClubAPI\\wwwroot\\",
+      "BasePath": "_content/HockeyClubAPI",
+      "RelativePath": "example.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\example.html"
+    }
+  ]
 }
