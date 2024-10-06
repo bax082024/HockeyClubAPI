@@ -18,6 +18,9 @@ builder.Services.AddIdentity<ApplicationUser, IdentityRole>()
     .AddEntityFrameworkStores<HockeyClubContext>()
     .AddDefaultTokenProviders();
 
+// Add Mvc service
+builder.Services.AddControllersWithViews();
+
 builder.Services.AddControllers();
 
 var app = builder.Build();
