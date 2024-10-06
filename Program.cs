@@ -22,7 +22,7 @@ builder.Services.AddControllers();
 
 var app = builder.Build();
 
-// Http Request Line
+
 app.UseAuthentication(); // Enable authentication
 app.UseAuthorization(); // Enable auhorization
 
