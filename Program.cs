@@ -1,3 +1,4 @@
+using Azure.Identity;
 using Microsoft.AspNetCore.Components.Forms;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.DependencyInjection;
@@ -46,4 +47,22 @@ async Task SeedUsers(IServiceProvider serviceProvider)
         ("helper@hockey.com", "Helper123", "Helper")
 
     };
+
+    foreach (var user in users)
+    {
+        if (await userManager.FindByEmailAsync(user.Email) == null)
+        {
+            var appUser = new ApplicationUser
+            {
+                UserName = user.Email,
+                Email = user.Email
+            };
+
+            var result = await userManager.CreateAsync(appUser, user.Password);
+            if (result.Succeeded)
+            {
+                await userManager.AddToRoleAsync(appUser, user.Role);
+            }
+        }
+    }
 }
