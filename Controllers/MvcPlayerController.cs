@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using HockeyClubAPI.Data;
 using Microsoft.EntityFrameworkCore;
+using HockeyClubAPI.Models;
 
 namespace HockeyClubAPI.MvcControllers
 {

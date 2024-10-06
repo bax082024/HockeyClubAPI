@@ -12,5 +12,9 @@ namespace HockeyClubAPI.Data
         
       }
 
+      public DbSet<Player> Players { get; set; }
+      public DbSet<Schedule> Schedules { get; set; }
+      public DbSet<Announcement> Announcements { get; set; }
+
   }
 }
