@@ -27,6 +27,20 @@ app.UseAuthorization(); // Enable auhorization
 
 app.MapControllers();
 
+using (var scope = app.Services.CreateScope())
+{
+    var services = scope.ServiceProvider;
+    try
+    {
+        await CreateRoles(services);
+        await SeedUsers(services);
+    }
+    catch (Exception ex)
+    {
+        Console.WriteLine($"An error occured while seeding roles and users: {ex.Message}");
+    }
+}
+
 async Task CreateRoles(IServiceProvider serviceProvider)
 {
     var roleManager = serviceProvider.GetRequiredService<RoleManager<IdentityRole>>();
@@ -45,7 +59,7 @@ async Task CreateRoles(IServiceProvider serviceProvider)
     }
 }
 
-var app = builder.Build();
+
 using (var scope = app.Services.CreateScope())
 {
     var services = scope.ServiceProvider;
