@@ -32,5 +32,16 @@ public class HockeyClubController : ControllerBase
     return Ok("Office has access to accounting and administration documents.")
   }
 
+  // Trainer has access to trainer files and related documents
+  [Authorize(Roles = "Trainer")]
+  [HttpGet("Trainer")]
+
+  public IActionResult GetTrainerData()
+  {
+    return Ok("Trainer has access to trainer files and related documents")
+  }
+
+  // Helper has access to helper specific documents
+
 
 }
