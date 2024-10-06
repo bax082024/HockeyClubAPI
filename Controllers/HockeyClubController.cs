@@ -24,6 +24,13 @@ public class HockeyClubController : ControllerBase
   }
 
   // Office has access to accounting and administration documents.
+  [Authorize(Roles = "Office")]
+  [HttpGet("Office")]
+
+  public IActionResult GetOfficeData()
+  {
+    return Ok("Office has access to accounting and administration documents.")
+  }
 
 
 }
