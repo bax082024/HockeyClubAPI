@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "nQlJ6L37ks4=",
+  "dgSpecHash": "kN0R8cJ0KCc=",
   "success": true,
-  "projectFilePath": "C:\\HjemmeKode\\C-Sharp\\C-Sharp\\HockeyClubAPI\\HockeyclubAPI\\HockeyClubAPI.csproj",
+  "projectFilePath": "C:\\HjemmeKode\\C-Sharp\\C-Sharp\\HockeyClubAPI\\HockeyClubAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\busch\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\busch\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",

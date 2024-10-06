@@ -3376,11 +3376,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\HjemmeKode\\C-Sharp\\C-Sharp\\HockeyClubAPI\\HockeyClubAPI\\HockeyClubAPI.csproj",
+      "projectUniqueName": "C:\\HjemmeKode\\C-Sharp\\C-Sharp\\HockeyClubAPI\\HockeyClubAPI.csproj",
       "projectName": "HockeyClubAPI",
-      "projectPath": "C:\\HjemmeKode\\C-Sharp\\C-Sharp\\HockeyClubAPI\\HockeyClubAPI\\HockeyClubAPI.csproj",
+      "projectPath": "C:\\HjemmeKode\\C-Sharp\\C-Sharp\\HockeyClubAPI\\HockeyClubAPI.csproj",
       "packagesPath": "C:\\Users\\busch\\.nuget\\packages\\",
-      "outputPath": "C:\\HjemmeKode\\C-Sharp\\C-Sharp\\HockeyClubAPI\\HockeyClubAPI\\obj\\",
+      "outputPath": "C:\\HjemmeKode\\C-Sharp\\C-Sharp\\HockeyClubAPI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\busch\\AppData\\Roaming\\NuGet\\NuGet.Config"

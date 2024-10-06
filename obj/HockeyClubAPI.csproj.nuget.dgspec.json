@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\HjemmeKode\\C-Sharp\\C-Sharp\\HockeyClubAPI\\HockeyclubAPI\\HockeyClubAPI.csproj": {}
+    "C:\\HjemmeKode\\C-Sharp\\C-Sharp\\HockeyClubAPI\\HockeyClubAPI.csproj": {}
   },
   "projects": {
-    "C:\\HjemmeKode\\C-Sharp\\C-Sharp\\HockeyClubAPI\\HockeyclubAPI\\HockeyClubAPI.csproj": {
+    "C:\\HjemmeKode\\C-Sharp\\C-Sharp\\HockeyClubAPI\\HockeyClubAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\HjemmeKode\\C-Sharp\\C-Sharp\\HockeyClubAPI\\HockeyclubAPI\\HockeyClubAPI.csproj",
+        "projectUniqueName": "C:\\HjemmeKode\\C-Sharp\\C-Sharp\\HockeyClubAPI\\HockeyClubAPI.csproj",
         "projectName": "HockeyClubAPI",
-        "projectPath": "C:\\HjemmeKode\\C-Sharp\\C-Sharp\\HockeyClubAPI\\HockeyclubAPI\\HockeyClubAPI.csproj",
+        "projectPath": "C:\\HjemmeKode\\C-Sharp\\C-Sharp\\HockeyClubAPI\\HockeyClubAPI.csproj",
         "packagesPath": "C:\\Users\\busch\\.nuget\\packages\\",
-        "outputPath": "C:\\HjemmeKode\\C-Sharp\\C-Sharp\\HockeyClubAPI\\HockeyclubAPI\\obj\\",
+        "outputPath": "C:\\HjemmeKode\\C-Sharp\\C-Sharp\\HockeyClubAPI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\busch\\AppData\\Roaming\\NuGet\\NuGet.Config"
