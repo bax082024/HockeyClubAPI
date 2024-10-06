@@ -17,3 +17,7 @@ build_property.SupportLocalizedComponentNames =
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
 build_property.MSBuildProjectDirectory = C:\HjemmeKode\C-Sharp\C-Sharp\HockeyClubAPI
 build_property._RazorSourceGeneratorDebug = 
+
+[C:/HjemmeKode/C-Sharp/C-Sharp/HockeyClubAPI/Views/Player/index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGxheWVyXGluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 

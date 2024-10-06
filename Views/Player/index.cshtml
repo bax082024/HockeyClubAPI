@@ -1,0 +1,29 @@
+@model IEnumerable<HockeyClubAPI.Models.Player>
+
+<h1>Players</h1>
+<a asp-action="Create" class="btn btn-primary">Add New Player</a>
+
+<table class="table>"
+  <thread>
+      <tr>
+        <th>Name</th>
+        <th>Position</th>
+        <th>Jersey Number</th>
+        <th>Date Of Birth</th>
+      </tr>
+
+  </thread>
+  <tbody>
+    @foreach (var player in Model)
+    {
+      <tr>
+          <td>@player.FullName</td>
+          <td>@player.Position</td>
+          <td>@player.JerseyNumber</td>
+          <td>@player.DateOfBirth.ToShortDateString()</td>
+      </tr>
+    }
+
+  </tbody>
+
+</table>

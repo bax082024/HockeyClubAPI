@@ -32,6 +32,7 @@ namespace HockeyClubAPI.MvcControllers
         await _context.SaveChangesAsync();
         return RedirectToAction(nameof(Index));
       }
+      return View(player);
     }
 
   }
