@@ -41,6 +41,8 @@ using (var scope = app.Services.CreateScope())
     }
 }
 
+app.Run();
+
 async Task CreateRoles(IServiceProvider serviceProvider)
 {
     var roleManager = serviceProvider.GetRequiredService<RoleManager<IdentityRole>>();
@@ -55,6 +57,10 @@ async Task CreateRoles(IServiceProvider serviceProvider)
         if (!roleExist)
         {
             roleResult = await roleManager.CreateAsync(new IdentityRole(roleName));
+            if (!roleResult.Succeeded)
+            {
+                throw new Exception($"Failed to create role : {roleName}");
+            }
         }
     }
 }
