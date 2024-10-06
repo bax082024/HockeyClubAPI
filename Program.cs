@@ -66,3 +66,10 @@ async Task SeedUsers(IServiceProvider serviceProvider)
         }
     }
 }
+
+using (var scope = app.Services.CreateAsyncScope())
+{
+    var services = scope.ServiceProvider;
+    await CreateRoles(services);
+    await SeedUsers(services);
+}
