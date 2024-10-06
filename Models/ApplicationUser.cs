@@ -4,7 +4,8 @@ namespace HockeyClubAPI.Models
 {
   public class ApplicationUser : IdentityUser
   {
-    
+    public string? Fullname { get; set; }
+    public string? Position { get; set; }
   }
 
   public class Player
