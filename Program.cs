@@ -25,6 +25,7 @@ var app = builder.Build();
 app.UseAuthentication(); // Enable authentication
 app.UseAuthorization(); // Enable auhorization
 
+app.MapControllers();
 
 async Task CreateRoles(IServiceProvider serviceProvider)
 {
