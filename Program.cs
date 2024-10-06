@@ -19,6 +19,12 @@ builder.Services.AddIdentity<ApplicationUser, IdentityRole>()
 
 builder.Services.AddControllers();
 
+var app = builder.Build();
+
+// Http Request Line
+app.UseAuthentication(); // Enable authentication
+app.UseAuthorization(); // Enable auhorization
+
 
 async Task CreateRoles(IServiceProvider serviceProvider)
 {
