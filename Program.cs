@@ -6,8 +6,13 @@ using System;
 using System.Threading.Tasks;
 using System.Xml.Schema;
 using HockeyClubAPI.Models;
+using Microsoft.EntityFrameworkCore;
+using System.Collections.Generic;
 
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddDbContext<HockeyClubContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+
 
 async Task CreateRoles(IServiceProvider serviceProvider)
 {
