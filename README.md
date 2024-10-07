@@ -1,4 +1,4 @@
-### Under Construction 
+### Hockey Club Administration API
 
 ## Introduction
-- This is a personal project of mine.
+- My first attempt at making a API with user classes, will be a long project. Bu the intent is to collect all documentation and paperwork etc from the hockey club and collect them in a database, and distribute information based on the users access.
