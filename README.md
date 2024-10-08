@@ -14,7 +14,6 @@ user access examples: - Admin - access to everything
 
 ### How to use
 
-**How to use**
 
 -To vist the links you need to go to: HockeyClubController.cs and
  Disable Authorize to check individual localhost.
