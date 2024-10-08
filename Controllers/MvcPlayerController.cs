@@ -1,42 +1,50 @@
-using Microsoft.AspNetCore.Mvc;
-using HockeyClubAPI.Data;
-using Microsoft.EntityFrameworkCore;
-using HockeyClubAPI.Models;
+using Microsoft.AspNetCore.Mvc; // For MVC-related classes like Controller, IActionResult
+using HockeyClubAPI.Data; // For your DbContext (HockeyClubContext)
+using Microsoft.EntityFrameworkCore; // For async database operations like ToListAsync
+using HockeyClubAPI.Models; // For your Player model
+
 
 namespace HockeyClubAPI.MvcControllers
 {
-  public class Playercontroller : Controller
-  {
-    private readonly HockeyClubContext _context;
-
-    public Playercontroller(HockeyClubContext context)
+    public class PlayerController : Controller
     {
-      _context = context;
+        private readonly HockeyClubContext _context;
+
+        public PlayerController(HockeyClubContext context)
+        {
+            _context = context;
+        }
+
+        // GET: Player
+        public async Task<IActionResult> Index()
+        {
+            var players = await _context.Players.ToListAsync();
+            return View(players);
+        }
+
+        // GET: Player/Create
+        [HttpGet]
+        public IActionResult Create()
+        {
+            return View();
+        }
+
+        // POST: Player/Create
+        [HttpPost]
+        public async Task<IActionResult> Create([Bind("FullName,Position,JerseyNumber,DateOfBirth")] Player player)
+        {
+            if (!ModelState.IsValid)
+            {
+                foreach (var error in ModelState.Values.SelectMany(v => v.Errors))
+                {
+                    Console.WriteLine(error.ErrorMessage);
+                }
+                return BadRequest(ModelState);
+            }
+
+            _context.Add(player);
+            await _context.SaveChangesAsync();
+            return RedirectToAction(nameof(Index));
+        }
     }
-
-    // GET: Player
-    public async Task<IActionResult> Index()
-    {
-      var players = await _context.Players.ToListAsync();
-      return View(players);
-    }
-
-    // GET: Player/Create
-    [HttpPost]
-    [ValidateAntiForgeryToken]
-
-    public async Task<IActionResult> Create([Bind("Fullname,Position,JerseyNumber,DateOfBirth")] Player player)
-    {
-      if (ModelState.IsValid)
-      {
-        _context.Add(player);
-        await _context.SaveChangesAsync();
-        return RedirectToAction(nameof(Index));
-      }
-      return View(player);
-    }
-
-  }
-
-
 }

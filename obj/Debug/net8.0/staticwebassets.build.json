@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "cVbH0sH1j88fgtRFhB3cPK0R8bqXRpSVBDg6QFPwu2c=",
+  "Hash": "iB+6bE2jeUlEcIgJ7par9k3k2oFnheSFZvjSSPE+Izk=",
   "Source": "HockeyClubAPI",
   "BasePath": "_content/HockeyClubAPI",
   "Mode": "Default",
@@ -16,6 +16,25 @@
     }
   ],
   "Assets": [
+    {
+      "Identity": "C:\\HjemmeKode\\C-Sharp\\C-Sharp\\HockeyClubAPI\\wwwroot\\css\\site.css",
+      "SourceId": "HockeyClubAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\HjemmeKode\\C-Sharp\\C-Sharp\\HockeyClubAPI\\wwwroot\\",
+      "BasePath": "_content/HockeyClubAPI",
+      "RelativePath": "css/site.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\site.css"
+    },
     {
       "Identity": "C:\\HjemmeKode\\C-Sharp\\C-Sharp\\HockeyClubAPI\\wwwroot\\example.html",
       "SourceId": "HockeyClubAPI",

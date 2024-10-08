@@ -1,6 +1,10 @@
 {
   "Files": [
     {
+      "Id": "C:\\HjemmeKode\\C-Sharp\\C-Sharp\\HockeyClubAPI\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
       "Id": "C:\\HjemmeKode\\C-Sharp\\C-Sharp\\HockeyClubAPI\\wwwroot\\example.html",
       "PackagePath": "staticwebassets\\example.html"
     },

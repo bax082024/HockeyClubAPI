@@ -43,7 +43,6 @@ app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
 
-app.MapControllers();
 
 using (var scope = app.Services.CreateScope())
 {

@@ -8,3 +8,10 @@ user access examples: - Admin - access to everything
                       - Office - access to office documents
                       - Trainer - access to trainer related info
                       - Helper - access to helper related info
+
+                      
+                      http://localhost:5086/api/hockey/admin
+                      http://localhost:5086/api/hockey/leader
+                      http://localhost:5086/api/hockey/office
+                      http://localhost:5086/api/hockey/trainer
+                      http://localhost:5086/api/hockey/helper
