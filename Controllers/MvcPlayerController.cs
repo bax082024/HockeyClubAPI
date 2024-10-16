@@ -1,7 +1,7 @@
-using Microsoft.AspNetCore.Mvc; // For MVC-related classes like Controller, IActionResult
-using HockeyClubAPI.Data; // For your DbContext (HockeyClubContext)
-using Microsoft.EntityFrameworkCore; // For async database operations like ToListAsync
-using HockeyClubAPI.Models; // For your Player model
+using Microsoft.AspNetCore.Mvc; 
+using HockeyClubAPI.Data; 
+using Microsoft.EntityFrameworkCore; 
+using HockeyClubAPI.Models; 
 
 
 namespace HockeyClubAPI.MvcControllers
